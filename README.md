@@ -1,2 +1,0 @@
-# Studying
-love life :art:
