@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul,ol {
+            list-style: none;
+        }
+        /* 轮播图  */
+        .lunbo {
+            position: relative;
+            width: 880px;
+            height: 550px;
+            margin: 20px auto;
+            border: 1px solid black;
+        }
+        .lunbo .pic li {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 880px;
+            height: 550px;
+            display: none;
+        }
+        .lunbo .pic .current {
+            display: block;
+        }
+        /* 按钮 */
+        .lunbo .btn a {
+            position: absolute;
+            top: 50%;
+            width: 40px;
+            height: 40px;
+            margin-top: -20px;
+            background-color: rgba(255,255,255,0.3);
+            color: #ffffff;
+            font: 20px/40px "宋体";
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+        }
+        .lunbo .btn .leftbtn {
+            left: 20px;
+        }
+        .lunbo .btn .rightbtn {
+            right: 20px;
+        }
+        .lunbo .btn a:hover {
+            background-color: rgba(255,255,255,0.6);
+        }
+        /* 下标 */
+        .lunbo .sub {
+            position: absolute;
+            left: 80px;
+            bottom: 30px;
+            width: 250px;
+
+        }
+        .lunbo .sub li {
+            width: 20px;
+            height: 20px;
+            margin-right: 20px;
+            float: left;
+            background-color: rgba(255,255,255,0.4);
+            text-align: center;
+            font: 12px/20px "微软雅黑";
+            cursor: pointer;
+        }
+        /* .lunbo .sub li:hover {
+            background-color: rgba(255,255,255,0.6);
+        } */
+        .lunbo .sub .current {
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="lunbo">
+        <ul class="pic">
+            <li class="current"><img src="../imgs//lunbo/c1.jpg" alt=""></li>
+            <li><img src="../imgs//lunbo/c2.jpg" alt=""></li>
+            <li><img src="../imgs//lunbo/c3.jpg" alt=""></li>
+            <li><img src="../imgs//lunbo/c4.jpg" alt=""></li>
+            <li><img src="../imgs//lunbo/c5.jpg" alt=""></li>
+            <li><img src="../imgs//lunbo/c6.jpg" alt=""></li>
+        </ul>
+        <div class="btn">
+            <a href="" class="leftbtn">&lt;</a>
+            <a href="" class="rightbtn">&gt;</a>
+        </div>
+        <ol class="sub">
+            <li class="current">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+        </ol>
+    </div>
+</body>
+</html>
