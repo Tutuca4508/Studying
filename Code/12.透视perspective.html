@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .box {
+        width: 225px;
+        height: 150px;
+        margin: 250px auto;
+        border: 1px solid #222;
+        /* 给3D变化的元素 的父级 设置透视，值越大效果越小，近大远小 */
+        perspective: 1000px;
+    }
+    .box img {
+        width: 225px;
+        /* 设置过渡，方便看效果 */
+        transition: all 1s ease;
+    }
+    .box img:hover {
+        /* 给3D变化元素设置3D旋转 */
+        transform: rotateX(30deg);
+    }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="imgs/1.jpg" alt="">
+    </div>
+</body>
+</html>

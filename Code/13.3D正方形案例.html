@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    .box {
+        width: 200px;
+        height: 200px;
+        margin: 250px auto;
+        border: 1px solid #222222;
+    }
+    .stage {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        /* 设置透视 */
+        perspective: 5000px;
+        /* 设置过渡 */
+        transition: all 5s ease;
+        /* 设置内部子元素在3D空间显示 */
+        transform-style: preserve-3d;
+
+    }
+    .stage div {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .stage:hover {
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+    .stage div:nth-child(1) {
+        width: 200px;
+        height: 200px;
+        background-color: rgba(255,255,0,0.3);
+        text-align: center;
+        font: bold 80px/200px "arial";
+        transform: translateZ(100px);
+    }
+    .stage div:nth-child(2) {
+        width: 200px;
+        height: 200px;
+        background-color: rgba(206, 93, 48, 0.3);
+        text-align: center;
+        font: bold 80px/200px "arial";
+        transform: rotateX(90deg) translateZ(100px);
+    }
+    .stage div:nth-child(3) {
+        width: 200px;
+        height: 200px;
+        background-color: rgba(67, 38, 145, 0.3);
+        text-align: center;
+        font: bold 80px/200px "arial";
+        transform: rotateY(180deg) translateZ(100px);
+    }
+    .stage div:nth-child(4) {
+        width: 200px;
+        height: 200px;
+        background-color: rgba(36, 184, 80, 0.3);
+        text-align: center;
+        font: bold 80px/200px "arial";
+        transform: rotateX(270deg) translateZ(100px);
+    }
+    .stage div:nth-child(5) {
+        width: 200px;
+        height: 200px;
+        background-color: rgba(156, 46, 129, 0.3);
+        text-align: center;
+        font: bold 80px/200px "arial";
+        transform: rotateY(-90deg) translateZ(100px);
+    }
+    .stage div:nth-child(6) {
+        width: 200px;
+        height: 200px;
+        background-color: rgba(53, 196, 196, 0.3);
+        text-align: center;
+        font: bold 80px/200px "arial";
+        transform: rotateY(90deg) translateZ(100px);
+    }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="stage">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+        </div>
+    </div>
+</body>
+</html>
