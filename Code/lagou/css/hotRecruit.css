@@ -1,0 +1,81 @@
+/* 热门职位样式 */
+.content .hot-recruit .detail .top {
+    width: 100%;
+    height: 105px;
+    border-bottom: 1px dashed #e0e0e0;
+}
+.content .hot-recruit .detail .top .position {
+    height: 22px;
+    line-height: 22px;
+}
+.content .hot-recruit .detail .top .position .name {
+    float: left;
+    font-size: 16px;
+}
+.content .hot-recruit .detail .top .position .time {
+    float: left;
+    color: #999;
+}
+.content .hot-recruit .detail .top .position .chat-me {
+    float: left;
+    width: 16px;
+    height: 16px;
+    background: url(../img/icon_chat.png) no-repeat;
+    margin-top: 3px;
+} 
+.content .hot-recruit .detail .top .position .salary {
+    float: right;
+    color: #FA6041;
+}
+
+/* 信息栏 */
+.hot-recruit .detail .top .info {
+    width: 100%;
+    height: 30px;
+    color: #777;
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+
+/* 标签 */
+.hot-recruit .detail .top .labels {
+    width: 100%;
+    height: 241px;
+}
+.hot-recruit .detail .top .labels span {
+    float: left;
+    width: 71px;
+    height: 26px;
+    border: 1px solid #f0f0f0;
+    margin-right: 10px;
+    text-align: center;
+    line-height: 26px;
+    color: #999;
+}
+
+/* 底部 */
+.hot-recruit .detail .bottom {
+    width: 100%;
+    height: 40px;
+    padding: 18px;
+}
+.hot-recruit .detail .bottom dt {
+    float: left;
+    width: 40px;
+    height: 40px;
+    margin-right: 14px;
+}
+.hot-recruit .detail .bottom dt img {
+    width: 40px;
+    height: 40px;
+}
+.hot-recruit .detail .bottom dd {
+    float: left;
+    line-height: 20px;
+}
+.hot-recruit .detail ul li .bottom dd h4 {
+    color: #555;
+  }
+.hot-recruit .detail ul li .bottom dd p {
+    color: #999;
+}

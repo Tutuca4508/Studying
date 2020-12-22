@@ -1,0 +1,75 @@
+/* 更多选项 */
+.more-list {
+    width: 100%;
+    height: 170px;
+    background-color: #fff;
+}
+.more-list .more-list-c {
+    padding-top: 6px;
+    width: 1245px;
+    height: 170px;
+}
+/* 层叠样式 */
+.more-list .more-list-c .more-list-com {
+    float: left;
+    height: 140px;
+    margin-right: 5px;
+}
+.more-list .more-list-c .more-list-item1 {
+    background-color: #f9f9f9;
+}
+.more-list .more-list-c .more-list-item1 a {
+    display: block;
+    float: left;
+    padding-top: 15px;
+    height: 41px;
+    width: 60px;
+    margin: 0 30px 15px;
+    text-align: center;
+}
+.more-list .more-list-c .more-list-item1 a i {
+    display: block;
+    height: 24px;
+    width: 24px;
+    margin: 0 auto 6px;
+}
+.more-list .more-list-c .more-list-item1 span {
+    font: 14px "Arial" "黑体";
+}
+.more-list .more-list-c .more-list-item1 .code i {
+    display: block;
+    background: url(/images/code.png) no-repeat;
+    background-size: 24px 24px;
+}
+.more-list .more-list-c .more-list-item1 .new i {
+    display: block;
+    background: url(/images/new.png) no-repeat;
+    background-size: 24px 24px;
+}
+.more-list .more-list-c .more-list-item1 .source i {
+    display: block;
+    background: url(/images/source.png) no-repeat;
+    background-size: 24px 24px;
+}
+.more-list .more-list-c .more-list-item1 .sourch i {
+    display: block;
+    background: url(/images/sourch.png) no-repeat;
+    background-size: 24px 24px;
+}
+.more-list .more-list-c .more-list-item2 a,.more-list-item3 a,.more-list-item4 a,.more-list-item5 a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.more-list .more-list-c .more-list-item2 a {
+    background: url(/images/list1.jpg) no-repeat;
+}
+.more-list .more-list-c .more-list-item3 a {
+    background: url(/images/list2.jpg) no-repeat;
+}
+.more-list .more-list-c .more-list-item4 a {
+    background: url(/images/list3.jpg) no-repeat;
+}
+.more-list .more-list-c .more-list-item5 a {
+    background: url(/images/list4.png) no-repeat;
+}
