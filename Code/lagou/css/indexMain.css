@@ -11,6 +11,7 @@
     height: 376px;
 }
 .content .main .aside .classfy {
+    position: relative;
     width: 360px;
     height: 376px;
 }
@@ -43,6 +44,16 @@
     height: 11px;
     background: url(../img/main_list_arrow.png) no-repeat 0 0 ;
 }
+
+
+/* 侧边栏子元素 */
+/* .content .main .aside .classfy .classfy-more {
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    width: 777px;
+    border: 1px solid #000;
+} */
 /* 焦点图 */
 .content .main .banner {
     float: right;
