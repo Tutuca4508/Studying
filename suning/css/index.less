@@ -1,2 +1,150 @@
 // 书写首页的css样式
 
+// 导入公共的 common.less 文件
+@import "common";
+
+//body的样式
+body {
+    min-width: 320px;
+    width: 15rem;
+    margin: 0 auto;
+    line-height: 1.5;
+    font-family: Arial,Helvetica,STHeiTi,sans-serif;
+    background: #F2F2F2;
+}
+
+ul,ol {
+    list-style: none;
+}
+
+@basefont: 50px;
+// top-banner 区域
+.top-banner {
+    position: relative;
+    width: 750rem / @basefont;
+    height: 100rem / @basefont;
+    .top-banner-img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .close {
+        position: absolute;
+        top: 0.5rem;
+        left: 0.1rem;
+        display: block;
+        width: 50rem / @basefont;
+        height: 50rem / @basefont;
+        background: url(../images/close.png) no-repeat center center;
+        background-size: 30rem / @basefont auto;
+    }
+}
+
+// header区域
+.header {
+    width: 750rem / @basefont;
+    height: 180rem / @basefont;
+    background-color: #ffdb47;
+    .header-top {
+        display: flex;
+        width: 682rem / @basefont;
+        height: 88rem / @basefont;
+        padding: 0 34rem / @basefont;
+        justify-content: space-between;
+        align-items: center;
+        .classify {
+            img {
+                display: block;
+                width: 36rem / @basefont;
+                height: 60rem / @basefont;
+            }
+        }
+        .ad {
+            img {
+                display: block;
+                width: 450rem / @basefont;
+                height: 55rem / @basefont;
+            }
+        }
+        .login {
+            img {
+                display: block;
+                width: 36rem / @basefont;
+                height: 60rem / @basefont;
+            }
+        }
+    }
+    .search {
+        position: relative;
+        width: 750rem / @basefont;
+        height: 92rem / @basefont;
+        padding: 0 24rem / @basefont;
+        box-sizing: border-box;
+        a {
+            position: absolute;
+            top: 0;
+            left: 24rem / @basefont;
+            display: block;
+            width: 702rem / @basefont;
+            height: 88rem / @basefont;
+        }
+        i {
+            position: absolute;
+            top: 26rem / @basefont;
+            left: 42rem / @basefont;
+            width: 36rem / @basefont;
+            height: 36rem / @basefont;
+            background: url(../images/search_btn.png) no-repeat;
+            background-size: 36rem / @basefont auto;
+        }
+        form {
+            display: flex;
+            width: 702rem / @basefont;
+            height: 88rem / @basefont;
+            align-items: center;
+            input {
+                width: 702rem / @basefont;
+                height: 64rem / @basefont;
+                padding: 3rem / @basefont 20rem / @basefont 0 65rem / @basefont;
+                box-sizing: border-box;
+                border: 0;
+                font-size: .56rem;
+                border-radius: 32rem / @basefont;
+            }
+        }
+    }
+}
+
+// banner 区域
+.banner {
+    width: 750rem / @basefont;
+    height: 260rem / @basefont;
+    background: url(../images/banner_bg.png) no-repeat 0 0;
+    background-size: 750rem / @basefont auto;
+    .wrapper {
+        width: 702rem / @basefont;
+        height: 260rem / @basefont;
+        margin: 0 auto;
+        background-color: pink;
+        ul {
+            position: relative;
+            width: 2000rem / @basefont;
+            height: 260rem / @basefont;
+            margin: 0; 
+            li {
+                position: absolute;
+                top: 0;
+                left: -702rem / @basefont;
+                img {
+                    width: 702rem / @basefont;
+                    height: 260rem / @basefont;
+                }
+            }
+        }
+    }
+}
