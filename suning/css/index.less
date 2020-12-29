@@ -127,10 +127,11 @@ ul,ol {
     background: url(../images/banner_bg.png) no-repeat 0 0;
     background-size: 750rem / @basefont auto;
     .wrapper {
+        position: relative;
         width: 702rem / @basefont;
         height: 260rem / @basefont;
         margin: 0 auto;
-        background-color: pink;
+        overflow: hidden;
         ul {
             position: relative;
             width: 2000rem / @basefont;
@@ -139,12 +140,73 @@ ul,ol {
             li {
                 position: absolute;
                 top: 0;
-                left: -702rem / @basefont;
+                left: 702rem / @basefont;
+                width: 702rem / @basefont;
+                height: 260rem / @basefont;
+                border-radius: 24rem / @basefont;
+                overflow: hidden;
+                &.current {
+                    left: 0;
+                }
                 img {
                     width: 702rem / @basefont;
                     height: 260rem / @basefont;
                 }
             }
+        }
+        ol {
+            position: absolute;
+            bottom: -32rem / @basefont;
+            left: 50%;
+            margin-left: -160rem / @basefont;
+            display: flex;
+            height: 8rem / @basefont;
+            justify-content: center;
+            align-items: center;
+            li {
+                margin: 0 4rem / @basefont;
+                width: 18rem / @basefont;
+                height: 8rem / @basefont;
+                i {
+                    display: block;
+                    width: 9rem / @basefont;
+                    height: 8rem / @basefont;
+                    background-color: #0000004D;
+                    border-radius: 8rem / @basefont;
+                }
+                &.current {
+                    background-color: #fff;
+                    border-radius: 8rem / @basefont;
+                    i {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// nav区域
+nav {
+    width: 750rem / @basefont;
+    height: 308rem / @basefont;
+    a {
+        float: left;
+        width: 150rem / @basefont;
+        height: 142rem / @basefont;
+        text-decoration: none;
+        img {
+            display: block;
+            width: 84rem / @basefont;
+            height: 84rem / @basefont;
+            margin: 24rem / @basefont 33rem / @basefont 0;
+        }
+        .title {
+            height: 28rem / @basefont;
+            line-height: 28rem / @basefont;
+            text-align: center;
+            font-size: 22rem / @basefont;
+            color: #666;
         }
     }
 }

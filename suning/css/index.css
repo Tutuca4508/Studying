@@ -167,10 +167,11 @@ ol {
   background-size: 15rem auto;
 }
 .banner .wrapper {
+  position: relative;
   width: 14.04rem;
   height: 5.2rem;
   margin: 0 auto;
-  background-color: pink;
+  overflow: hidden;
 }
 .banner .wrapper ul {
   position: relative;
@@ -181,9 +182,68 @@ ol {
 .banner .wrapper ul li {
   position: absolute;
   top: 0;
-  left: -14.04rem;
+  left: 14.04rem;
+  width: 14.04rem;
+  height: 5.2rem;
+  border-radius: 0.48rem;
+  overflow: hidden;
+}
+.banner .wrapper ul li.current {
+  left: 0;
 }
 .banner .wrapper ul li img {
   width: 14.04rem;
   height: 5.2rem;
+}
+.banner .wrapper ol {
+  position: absolute;
+  bottom: -0.64rem;
+  left: 50%;
+  margin-left: -3.2rem;
+  display: flex;
+  height: 0.16rem;
+  justify-content: center;
+  align-items: center;
+}
+.banner .wrapper ol li {
+  margin: 0 0.08rem;
+  width: 0.36rem;
+  height: 0.16rem;
+}
+.banner .wrapper ol li i {
+  display: block;
+  width: 0.18rem;
+  height: 0.16rem;
+  background-color: #0000004D;
+  border-radius: 0.16rem;
+}
+.banner .wrapper ol li.current {
+  background-color: #fff;
+  border-radius: 0.16rem;
+}
+.banner .wrapper ol li.current i {
+  display: none;
+}
+nav {
+  width: 15rem;
+  height: 6.16rem;
+}
+nav a {
+  float: left;
+  width: 3rem;
+  height: 2.84rem;
+  text-decoration: none;
+}
+nav a img {
+  display: block;
+  width: 1.68rem;
+  height: 1.68rem;
+  margin: 0.48rem 0.66rem 0;
+}
+nav a .title {
+  height: 0.56rem;
+  line-height: 0.56rem;
+  text-align: center;
+  font-size: 0.44rem;
+  color: #666;
 }
