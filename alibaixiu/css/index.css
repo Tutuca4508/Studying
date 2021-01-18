@@ -9,10 +9,7 @@
 body {
     background-color: #f5f5f5;
 } 
-h1,h2,h3,h4,h5,h6 {
-    margin: 0;
-    padding: 0;
-}
+
 
 /* 容器样式 */
 .container {
@@ -24,14 +21,22 @@ header {
     padding-left: 0!important;
 }
 header .logo {
+    margin: 0;
     background-color: #6893D9;
 }
 header .logo a {
     display: block;
 }
-header .logo a img {
+header .logo a:hover {
+    text-decoration: none;
+}
+header .logo a span {
     display: block;
-    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
 }
 header nav {
     background-color: #EEEEEE;
@@ -51,4 +56,116 @@ header nav a:hover {
 header nav a::before {
     padding-right: 5px;
     vertical-align: middle;
+}
+
+/* news 区域 */
+main .news {
+    border-bottom: 1px solid #ccc;
+}
+main .news li {
+    float: left;
+    width: 25%;
+    height: 128px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+main .news li:nth-child(1) {
+    width: 50%;
+    height: 266px;
+}
+main .news li a {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+main .news li a img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+main .news li a p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 41px;
+    margin: 0;
+    background-color: rgba(0,0,0,0.7);
+    padding: 5px 10px 0;
+    color: #fff;
+    font-size: 12px;
+    line-height: 16px;
+}
+main .news li:nth-child(1) a p {
+    padding: 0 10px;
+    font-size: 20px;
+    line-height: 41px;
+}
+
+/* publish 区域 */
+main .publish .publish-box {
+    border-bottom: 1px solid #ccc;
+}
+main .publish .publish-box img {
+    padding-top: 10px;
+}
+
+/* aside 区域 */
+aside .banner {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+aside .hot {
+    display: block;
+    width: 100%;
+    padding: 0 20px 20px;
+    border: 1px solid #ccc;
+}
+aside .hot:hover {
+    text-decoration: none;
+}
+aside .hot button {
+    border-radius: 0;
+    margin-bottom: 10px;
+}
+aside .hot p {
+    font-size: 12px;
+}
+
+/* 进行媒体查询，制作响应式效果 */
+/* 超小屏幕xs（手机，小于 768px）：设置宽度为 100%
+    小屏幕sm（平板，大于等于 768px）：设置宽度为 750px
+    中等屏幕md（桌面显示器，大于等于 992px）：宽度设置为 970px
+    大屏幕（大桌面显示器，大于等于 1200px）：宽度设置为 1170px
+    */
+
+/* 小屏幕及以上 */
+@media screen and (min-width: 768px) {
+    header .logo img {
+        margin: 0 auto;
+      }
+}
+/* 超小屏幕 小屏幕 */
+@media screen and (max-width: 991px) {
+    header nav a {
+        float: left;
+        width: 20%;
+    }
+}
+/* 超小屏幕 */
+@media screen and (max-width: 767px) {
+    header nav a {
+        font-size: 14px;
+    }
+    main .news li{
+        width: 50%;
+    }
+    main .news li:nth-child(1) {
+        width: 100%;
+    }
+    main .publish .publish-box h3 {
+        font-size: 14px;
+    }
 }
