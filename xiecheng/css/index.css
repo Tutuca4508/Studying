@@ -1,0 +1,475 @@
+body{
+    width:100%;
+    min-width: 320px;
+    max-width: 1080px;
+    margin:0 auto;
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.5;
+    color:#666;
+    background-color: rgb(245, 245, 245);
+}
+a{
+    text-decoration: none;
+    color: #666;
+}
+ul{
+    margin:0;
+    padding: 0;
+    list-style: none;
+}
+.app{
+    height: 45px;
+}
+.app>ul li{
+    height: 45px;
+    float: left;
+    background-color: black;
+    text-align:center;
+    line-height: 45px;
+    color:white
+}
+.app>ul li:nth-child(1){
+    width:8%
+}
+.app>ul li:nth-child(1) img{
+    width:10px
+}
+.app>ul li:nth-child(2){
+    width:10%
+}
+.app>ul li:nth-child(2) img{
+    width: 30px;
+    vertical-align: middle;
+}
+.app>ul li:nth-child(3){
+    width:57%
+}
+.app>ul li:nth-child(4){
+    width:25%;
+    background-color: red;
+}
+
+/* 搜索 */
+.search-wrap{
+    position: fixed;
+    top:0;
+    height:44px;
+    overflow: hidden;
+    width: 100%;
+    min-width: 320px;
+    max-width: 640px;;
+}
+.search-btn{
+    position: absolute;
+    left:0;
+    top:0;
+    width:40px;
+    height: 40px;
+    background: url(../images/xz.png) no-repeat 18px 15px;
+    background-size: 18px 15px;
+}
+.search-login{
+    position: absolute;
+    right:0;
+    top:0;
+    width:40px; 
+    height: 40px;
+    line-height: 40px;
+    color: rgb(195, 195, 195);
+}
+.search{
+    background-color: #fff;
+    height: 30px;
+    margin: 7px 50px 0;
+    border-radius: 15px;
+    position: relative;
+}
+.jd-btn{
+    height: 15px;
+    width: 20px;
+    background: url(../images/jdjd.png) no-repeat;
+    background-size: 20px 15px;
+    position: absolute;
+    top:8px;
+    left:10px;
+}
+.jd-btn::after{
+    height: 15px;
+    width: 1px;
+    display: inline-block;
+    background-color: rgb(211, 211, 211);
+    content: "";
+    position: absolute;
+    top:0;
+    right: -10px;
+}
+.jd-sprites{
+    width: 18px;
+    height: 15px;
+    background: url(../images/jd-sprites.png) no-repeat 83px 0;
+    background-size: 200px auto;
+    position: absolute;
+    top:8px;
+    left:50px;
+}
+.search input{
+    width: 65%;
+    height: 18px;
+    position: absolute;
+    top: 4px;
+    left: 69px;
+    border: none;
+    font-size: 14px;
+    outline: none;
+}
+/* 轮播图 */
+.banner-bg{
+    width: 100%;
+    background: url(../images/banner-bg.jpg) no-repeat center;
+    background-size: 100% auto;
+    padding-top: 50px;
+}
+.banner{
+    width: 94%;
+    height: 140px;
+    margin:0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    /* margin-top: 50px;因为banner-top与banner虽是子父，但是默认上下关系，所以父子默认关系上下边共用无法使用margin-top，只能使用paddingtop */
+}
+.banner img{
+    width: 100%;
+}
+/* 主会场 */
+.brand{
+    overflow: hidden;
+}
+.brand a:nth-child(1) {
+    width: 24%;
+    float:left;
+    position: relative;
+
+}
+.brand a:nth-child(1) div{
+    position: absolute;
+    width: 73%;
+    height: 66px;
+    top:23px;
+    left:14px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.brand a:nth-child(1) img{
+    width: 100%;
+}
+.brand a:nth-child(2) {
+    width: 52%;
+    float: left;
+    
+}
+.brand a:nth-child(2) img{
+    width: 100%;
+}
+.brand a:nth-child(3) {
+    width: 24%;
+    float: left;
+    position: relative;
+}
+.brand a:nth-child(3) div{
+    position: absolute;
+    width: 73%;
+    height: 66px;
+    top:23px;
+    left:9px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+.brand a:nth-child(3) img{
+    width: 100%;
+}
+/* nav框架 */
+nav{
+    overflow: hidden;
+}
+nav>a{
+    float:left;
+    width:20%;
+    text-align: center;
+    
+}
+nav>a img{
+    width:40px
+}
+nav>a span{
+    display: block;
+    font:12px
+}
+/* 下载APP */
+.download{
+    width: 120px;
+    height: 30px;
+    background: url(../upload/jd.png) no-repeat 2px center;
+    background-color: #f63515;
+    border-radius: 15px 0 0 15px;
+    color:white;
+    line-height: 30px;
+    font-size: 12px;
+    padding-left: 44px;
+    background-size: 26px 26px;
+    position:fixed;
+    top:80px;
+    right: -130px;
+}
+/* 秒杀专场 */
+.kill-bg{
+    width: 100%;
+    height: 160px;
+    padding-top:15px
+}
+.kill{
+    width: 96%;
+    height: 140px;
+    background-color: #fff;
+    margin:0 auto;
+    border-radius: 10px;
+}
+.kill-title{
+    width: 96%;
+    overflow: hidden;
+}
+.kill-title>span{
+    float:left;
+    float:14px;
+    margin-left:10px;
+    margin-top:4px;
+    display: block;
+}
+.kill-order{
+    float: left;
+    font-size: 14px;
+    color: red;
+    margin-left:10px;
+    margin-top:5px
+}
+.dianchang{
+    background:url(../upload/dianchang.png);
+    background-size: 22px;
+    width: 22px;
+    height: 19px;
+    float: right;
+    margin-left: 5px;
+}
+.kill-time{
+    float: left;
+    overflow: hidden;
+    margin-left:20px;
+    margin-top:4px;
+}
+.kill-time>div{
+    float:left
+}
+.kill-time-h,.kill-time-m,.kill-time-s{
+    width: 15px;
+    height: 18px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    padding:1px
+}
+.kill-time>span{
+    display: block;
+    float:left;
+    color:red;
+    font-weight: bold;
+    padding:0 1px
+}
+.kill-title a{
+    display: block;
+    float: right;
+    color:red;
+    font-size: 12px;
+    margin-top:4px
+}
+.kill-more{
+    float: right;
+}
+.more-icon{
+    width: 12px;
+    height: 12px;
+    color: white;
+    background-color: red;
+    text-align: center;
+    line-height: 12px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left:1px;
+    padding-bottom: 2px;
+    float: right;
+    margin-left: 5px;
+    margin-top: 1px;
+}
+.kill-menu{
+    margin:12px auto;
+    overflow: hidden;
+    width: 355px;
+    
+
+}
+.kill-menu-list{
+    float: left;
+    overflow: hidden;
+    margin-right: 2px;
+}
+.kill-menu-list span{
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: red;
+}
+.kill-menu-list span:nth-child(3){
+    text-decoration: line-through;
+    color:#999;
+}
+.kill-menu-list img{
+    width: 55px;
+    margin-right: 2px;
+}
+/* 优惠券 */
+.discount-bg{
+    width: 100%;
+    height: 120px;
+    margin-top:5px
+}
+.discount{
+    width: 96%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.discount>img{
+    display: block;
+    float: left;
+    width: 196px;
+}
+
+/* 优惠标题 */
+.discount-title{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 16px;
+}
+.discount-title img{
+    width: 414px;
+}
+/* 东家小院 */
+.classfy-home{
+    width: 100%;
+    overflow: hidden;
+    margin-top: 5px;
+}
+.home-title{
+    width: 100%;
+    text-align: center;
+}
+.home-title img{
+    height: 38px;
+}
+.home{
+    width: 94%;
+    height: 266px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.home-list-up{
+    float: left;
+    width: 192px;
+    overflow: hidden;
+}
+.home-list-up span{
+    display: block;
+    margin-left: 10px;
+}
+.home-list-up :nth-child(1){
+    font-weight: 700;
+    font-size: 17px;
+    background: -webkit-linear-gradient(left,#45CAFF,#1471FB);
+    background: linear-gradient(90deg, #45CAFF,#1471FB);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.home-list-up :nth-child(2){
+    color:#666771;
+    font: 12px;
+}
+.home-pic{
+    width: 195px;
+    text-align: center;
+    margin-top:6px
+}
+.home-pic a{
+    margin-left: 3px;
+}
+.home-list-up img{
+    width: 66px;
+}
+.home-list-down{
+    width: 96px;
+    overflow: hidden;
+    float: left;
+    margin-top:5px
+}
+.down-title span{
+    display: block;
+    margin-left: 10px;
+}
+.down-title :nth-child(1){
+    font-weight:700 ;
+    font-size: 17px;
+    color: #000000;
+}
+.down-title :nth-child(2){
+    color:#666771;
+    font: 12px;
+}
+
+.down-pic{
+    text-align: center;
+}
+.down-pic img{
+    width: 66px;
+}
+/* 分类每日逛 */
+.home-list-day{
+    float: left;
+    width: 97px;
+    height: 132px;
+}
+.home-list-day span{
+    display: block;
+    margin-left: 10px;
+}
+.home-list-day :nth-child(1){
+    background: -webkit-linear-gradient(left,#FF2A2A,#F139D2);
+    background: linear-gradient(90deg, #FF2A2A,#F139D2);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 17px;
+    font-weight: 700;
+    margin-top:2px
+}
+.home-list-day :nth-child(2){
+    color:#666771;
+    font: 12px;
+}
+.day-pic {
+    text-align: center;
+    
+}
+.day-pic img{
+    width: 66px;
+    margin-top:5px
+
+}
