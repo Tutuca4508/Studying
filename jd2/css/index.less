@@ -3,8 +3,13 @@
         font-size: 75px !important;
     }
 }
+@media screen and (max-width: 320px) {
+    html {
+        font-size: 32px !important;
+    }
+}
 body {
-  min-width: 320px;
+  min-width: 4.266667rem;
   width: 10rem;
   margin: 0 auto;
   line-height: 1.5;
@@ -20,28 +25,211 @@ input{
     -webkit-appearance: none;
 }
 /*禁用长按页面时的弹出菜单*/
-img,a { -webkit-touch-callout: none; }
+img,a { 
+    -webkit-touch-callout: none; 
+}
+a {
+    text-decoration: none;
+}
+ul,ol {
+    list-style: none;
+    padding: 0;
+}
+li {
+    padding: 0;
+}
 
 /* 顶部提示 */
 .top-tips {
     display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: .666667rem;
+    height: 50px;
     background-color: #232326;
-    vertical-align: middle;
+    z-index: 20;
     .close {
-        width: .213333rem;
-        height: .213333rem;
+        width: 16px;
+        height: 16px;
+        margin: auto 2.5%;
         img {
-            width: .213333rem;
-            margin-left: .066667rem;
-            margin-top: .066667rem;
+            display: block;
+            width: 16px;
         }
     }
     div:nth-child(2) {
-        width: .466667rem;
-        height: .466667rem;
-        padding: .133333rem .266667rem .066667rem;
+        width: 35px;
+        height: 35px;
+        margin: auto 5px auto 8px;
+        img {
+            display: block;
+            width: 35px;
+            height: 35px;
+        }
+    }
+    span {
+        display: block;
+        flex: 1;
+        height: 50px;
+        margin-left: 10px;
+        padding-top: 7px;
+        font-size: .16rem;
+        .text1 {
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        .text2 {
+            // margin-top: .066667rem;
+            color: #999;
+            margin: 0;
+            padding: 0;
+        }
+    }
+    .open {
+        padding: 15px 40px;
+        background-color: #CD2525;
+        a {
+            display: block;
+            color: #fff;
+            font-size: 16px;
+        }
+    }
+}
+
+// 搜索框
+.search-wrap {
+    display: flex;
+    position: fixed;
+    left: 0;
+    top: 50px;
+    width: 100%;
+    height: 44px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 20;
+    // background-color: #FF704E;
+    .classify {
+        display: flex;
+        width: 40px;
+        height: 44px;
+        justify-content: center;
+        align-items: center;
+        span {
+            display: block;
+            width: 20px;
+            height: 18px;
+            background: url(../img/classfy.png) no-repeat;
+            background-size: 20px auto;
+        }
+    }
+    .login {
+        width: 44px;
+        height: 44px;
+        a {
+            color: #fff;
+            font-size: 18px;
+        }
+    }
+    .search {
+        position: relative;
+        flex: 1;
+        height: 30px;
+        border-radius: 15px;
+        margin: 0 10px;
+        background-color: #fff;
+        a {
+            display: block;
+            height: 30px;
+            width: 100%;
+            .search-btn {
+                position: absolute;
+                left: 10px;
+                top: 8px;
+                width: 20px;
+                height: 15px;
+                background: url(../img/jdjd.png) no-repeat;
+                background-size: 20px 15px;
+                &::after {
+                    display: inline-block;
+                    position: absolute;
+                    top: 0;
+                    right: -10px;
+                    content: "";
+                    height: 15px;
+                    width: 1px;
+                    background-color: rgb(211, 211, 211);
+                }
+            } 
+            .search-sprites {
+                width: 18px;
+                height: 15px;
+                background: url(../img/jd-sprites.png) no-repeat -83px 0;
+                background-size: 200px auto;
+                position: absolute;
+                top:8px;
+                left:50px;
+            }
+            input {
+                border: none;
+                position: absolute;
+                top: 4px;
+                left: 69px;
+                height: 16px;
+                width: 70%;
+                font-size: 12px;
+                outline: none;
+            }
+        }
+    }
+}
+
+// 轮播图
+.banner {
+    margin-top: 50px;
+    width: 100%;
+    background-size: 100%;
+    .banner-bg {
+        width: 100%;
+        height: 570px;
+        background-image: linear-gradient(to top,#fff,#FF6A49 85%,);
+    }
+    ul {
+        position: relative;
+        top: -510px;
+        width: 90%;
+        height: 3.56rem;
+        overflow: hidden;
+        margin: 0 auto;
+        border-radius: 10px;
+        li {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            a {
+                display: block;
+                width: 100%;
+                img {
+                    display: block;
+                    width: 100%;
+                }
+            }
+        }
+        li:nth-child(2) {
+            left: 100%;
+        }
+        li:nth-child(3) {
+            left: 200%;
+        }
         
+    }
+    ol {
+       position: absolute; 
+       top: 300px;
+       li {
+           
+       }
     }
 }
