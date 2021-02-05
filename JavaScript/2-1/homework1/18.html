@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+
+        // 18.  推导循环执行的顺序，用文字进行说明，并推导出可能的结果。
+        for(var m = 1,n = 2; m + n < 25; m++){
+            n += 3;
+            console.log(m);
+        }
+        // 第一步m=1 n=2，m+n=3，n=2+3=5.输出m=1
+        // 第二步m++,m还是1，m+n=2+5=7<25,n=5+3=8,输出m=2
+        // 第三步m++,m还是2，m+n=3+8=11<25,n=8+3=11,输出m=3
+        // 第四步m++,m还是3，m+n=4+11=15<25,n=11+3=14,输出m=4
+        // ······以此类推
+        // 第六步m++,m还是5，m+n=6+17=13<25,n=20+3=23,输出m=6
+        // 第七步m++,m还是6，m+n=7+23=30>25,条件不成立，结束循环
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

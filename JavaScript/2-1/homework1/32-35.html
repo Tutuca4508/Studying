@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        // 32.   请用循环计算出 1+2+3+4+5+...+100   的值
+        var num = 0;
+        for (var i = 1; i <= 100; i++) {
+            num += i;
+        }
+        console.log(num);
+
+        // 33.   开发一款软件，根据公式（身高-108）*2=体重，可以有10斤左右的浮动。判断测试者体重为标准体重还是超重还是偏瘦
+        var weight = parseFloat(prompt("请输入您的体重")),
+            height = parseFloat(prompt("请输入您的身高"));
+        var c = (height - 108) * 2;
+        var cha = weight - c;
+        if (c > 10) {
+            alert("您超重了");
+        } else if (c < 0) {
+            alert("您偏瘦了");
+        } else {
+            alert("您是标准体重");
+        }
+
+        // 34.
+        var grade = prompt("请输入分数");
+        switch (parseInt(grade / 10)) {
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+                alert("你的成绩等级为不及格，继续加油哦！");
+                break; 
+            case 6:
+            case 7:
+            case 8:
+                alert("你的成绩等级为良好！");
+                break; 
+            default:
+                alert("您的成绩等级为优秀！");
+        }
+        
+        // var grade = prompt("请输入分数");
+        // var g = parseInt(grade / 10);
+        // if (g >= 10) {
+        //     alert("您的成绩等级为优秀！");
+        // } else if (g >= 6) {
+        //     alert("您的成绩等级为良好！");
+        // } else {
+        //     alert("你的成绩等级为不及格，继续加油哦！");
+        // }
+
+
+
+        // 35.   输入月份，显示当月天数（输入2月时需要再次输入年份判断是不是闰年后在显示当月天数）
+        var month = parseInt(prompt("请输入月份")),
+            year = parseInt(prompt("请输入年份"));
+        switch (month) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12:
+                alert("这个月有31天");
+            case 2:
+                if (year % 400 == 0 || year % 100 != 0 && year % 4 == 0) {
+                    alert("这个月有29天");
+                } else {
+                    alert("这个月有28天");
+                }
+                break;
+            default:
+                alert("这个月有30天");
+                break;
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

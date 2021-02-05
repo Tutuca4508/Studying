@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        // 19.  推导循环执行的顺序，用文字进行说明，并推导出可能的结果。
+        for(var i = 30 ; i > 5 ; i -= 7){
+​           console.log(i--);
+​       }
+            // 第一步 i=30, i>5, 输出i--为30，i-7=29-7=22
+            // 第二步 i=22, i>5, 输出i--为22，i-7=22-7=15
+            // 第三步 i=15, i>5, 输出i--为15，i-7=14-7=7
+            // 第四步 i=7, i>5, 输出i--为7，i-7=6-7=-1
+            // 第五步 i=-1, i<5不符合条件，结束循环
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

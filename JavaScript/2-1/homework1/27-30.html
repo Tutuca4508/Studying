@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+
+        // 27.   列出1~10000的所有质数。
+
+        for (var i = 1; i <= 1000; i++) {
+            var c = 0;
+            for (var j = 1; j <= i; j++) {
+                if (i % j == 0) {
+                    ++c;
+                }
+            }
+            if (c == 2) {
+                console.log(i);
+            }
+        }
+
+        // 28.苹果3元一个，鸭梨2元一个，桃子1元一个。现在想用200元正好买100个水果，在控制台中列出所有可能性。
+        var apple = 0; //苹果
+		var pear = 0; //梨
+		var peach = 0; //桃子
+ 
+        for (apple = 0; apple <= 50; apple++) {
+        	for (pear = 0; pear <= (100 - apple); pear++) {
+                peach = 100 - apple - pear;
+                if (3 * apple + 2 * pear + peach == 200) {
+					console.log(apple, pear, peach);
+                }
+            }
+        }
+
+
+        // 29.
+        var name = prompt("请输入名字：");
+        if (name == "jt") {
+            alert("金团网");
+        } else if (name == "ejt") {
+            alert("金团相相贷");
+        } else if (name == "ejin") {
+            alert("网上综合金融体验馆");
+        } else {
+            alert("金团网络典当");
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

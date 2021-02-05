@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 13. 如果今天是星期二，那么1000天后是星期几？用户输入一个天数，计算这个天数后是星期几。
+        var day = parseInt(prompt("请输入天数:"));
+        if (day <= 5 ) {
+            week = 2 + day;
+            console.log(day + "天后是星期" + week);
+        } else {
+            day = day - 5;
+            week = day % 7;
+            if (week == 0) {
+                console.log(day + "天后是星期7");
+            } else {
+                console.log(day + "天后是星期" + week);
+            }
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

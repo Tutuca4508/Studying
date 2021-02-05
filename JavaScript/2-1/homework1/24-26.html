@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+
+        // 24. 水仙花数是一种特殊的四位数，它的特点就是，每个数位的四次方和，等于它本身。请编程找出来。
+        for (var i = 1000; i <= 9999; i++) {
+            var ge = i % 10,
+                shi = parseInt(i / 10) % 10,
+                bai = parseInt(i / 100) % 10,
+                qian = parseInt(i / 1000);
+            var sum = ge * ge * ge * ge + shi * shi * shi * shi + bai * bai * bai * bai + qian * qian * qian * qian;
+            if (sum == i) {
+                console.log(i);
+            }
+        }
+
+        // 25.   如果一个数恰好等于它的约数之和，则称该数为“完美数”。
+        // 例如：
+        // 第1个完全数是6，它有约数1、2、3、6，除去它本身6外，其余3个数相加，1+2+3=6。第2个完全数是28，它有约数1、2、4、7、14、28，除去它本身28外，其余5个数相加，1+2+4+7+14=28。
+        // 试寻找1~10000之间的所有完美数。
+        for (var i = 1; i <= 10000; i++) {
+            var sum = 0;
+            for (var m = 1; m < i; i++) {
+                if (i % m ==0) {
+                    sum += m;
+                }  
+            }
+            if (sum = i) {
+                        console.log(i + "是完全数");
+                }
+        }
+
+        // 26. 用户输入一个数字，判断这个数字是否是质数。质数就是指它的约数只有1和它本身。看约数个数是否是2.
+        var n = parseInt(prompt("请输入一个数字："));
+        var c = 0;
+        for (var i = 1; i <= n; i++) {
+            if (n % i == 0) {
+                ++c;
+            }
+        }
+        if (c == 2) {
+            alert("这个数是质数");
+        }else{
+            alert("这不是一个质数");
+        }
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
